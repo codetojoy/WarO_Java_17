@@ -18,6 +18,7 @@ To Build:
 
 useful commands:
 
+* `sdk env`
 * `./gradlew clean test`
     - on Windows, use `gradlew.bat`
 * `./gradlew run`
