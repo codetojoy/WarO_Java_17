@@ -13,7 +13,7 @@ a Java submission for War-O as a code exercise
 To Build:
 ---------
 
-* requires JDK 17
+* requires JDK 18
 * Gradle wrapper version: 7.3-rc-1
 
 useful commands:
