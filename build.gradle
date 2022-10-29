@@ -24,3 +24,9 @@ installDist.doFirst {
 installDist {
     into project.stagingDir
 }
+
+test {
+    testLogging {
+        events "passed", "failed"
+    }
+}
