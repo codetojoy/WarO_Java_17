@@ -1,9 +1,9 @@
 package org.peidevs.waro.table;
 
-import static org.junit.Assert.*;
-import java.util.*;
-import org.junit.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.*;
 
+import java.util.*;
 import java.util.stream.*;
 
 import org.peidevs.waro.player.*;
@@ -65,14 +65,14 @@ public class DealerTest {
         assertEquals(8, handList.get(3).cardsAsIntStream().count());
     }
 
-    @Test(expected=IllegalArgumentException.class)
+    @Test
     public void testDeal_Uneven() {
         var dealer = new Dealer();
         int numCards = 42;
         int numPlayers = 4;
 
         // test
-        dealer.deal(numCards, numPlayers);
+        assertThrows(IllegalArgumentException.class, () -> dealer.deal(numCards, numPlayers));
     }
 
     @Test

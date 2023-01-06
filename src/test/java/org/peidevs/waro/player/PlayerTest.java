@@ -3,10 +3,10 @@ package org.peidevs.waro.player;
 import org.peidevs.waro.strategy.*;
 import org.peidevs.waro.table.Hand;
 
-import static org.junit.Assert.*;
-import java.util.*;
-import org.junit.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.*;
 
+import java.util.*;
 import java.util.stream.*;
 
 public class PlayerTest {

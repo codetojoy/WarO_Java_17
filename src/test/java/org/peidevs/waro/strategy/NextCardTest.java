@@ -1,9 +1,9 @@
 package org.peidevs.waro.strategy;
 
-import static org.junit.Assert.*;
-import java.util.*;
-import org.junit.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.*;
 
+import java.util.*;
 import java.util.stream.*;
 
 public class NextCardTest {
@@ -21,5 +21,4 @@ public class NextCardTest {
       
         assertEquals(1, result);
     }
-
 }
